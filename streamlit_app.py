@@ -31,6 +31,13 @@ def predict_image(img):
 
 # Streamlit interface
 st.title('Tooth Health Check')
+st.write("""
+### Tooth Health Categories:
+1. **Disklorasi Gigi**: Indicates discolored teeth.
+2. **Gigi Sehat**: Represents healthy teeth with no issues.
+3. **Karies Gigi**: Indicates the presence of cavities or tooth decay.
+4. **Radang Gusi**: Refers to gum inflammation or gum disease.
+""")
 
 uploaded_file = st.file_uploader("Choose an image...", type="jpg")
 
