@@ -30,7 +30,7 @@ def predict_image(img):
     return categories[np.argmax(output_data)]
 
 # Streamlit interface
-st.title('Dental Health Check')
+st.title('Tooth Health Check')
 
 uploaded_file = st.file_uploader("Choose an image...", type="jpg")
 
